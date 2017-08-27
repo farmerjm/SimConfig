@@ -5,6 +5,26 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+
+/*  
+ * USAGE:
+ *  
+ *  Create a file of format:
+ *  
+ *    KEY=VAL
+ *    KEY="STRING"
+ *
+ *  Read in the file with AddConfig:
+ *
+ *    SimConfig conf == SimConfig::Instance();
+ *    conf.AddConfig(PATH_TO_CONFIG);
+ *
+ *  Then query for values using:
+ *
+ *    conf.GetValue(KEY); 
+ *    conf.GetString(KEY);
+ */
+
 class SimConfig {
 
   public:
