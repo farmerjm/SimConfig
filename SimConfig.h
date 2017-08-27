@@ -1,8 +1,10 @@
+#ifndef SIMCONFIG_H
+#define SIMCONFIG_H
+
 #include <iostream>
 #include <vector>
 #include <fstream>
 #include <sstream>
-
 class SimConfig {
 
   public:
@@ -29,3 +31,5 @@ class SimConfig {
 
 
 };
+
+#endif
