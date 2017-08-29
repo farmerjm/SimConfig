@@ -62,7 +62,7 @@ void SimConfig::ReadConfig(const std::string& fname) {
     split2=sin.substr(sep+1,len-sep);
 
     if (vals.size() != 0) {
-      for (pair : vals) {
+      for (auto pair : vals) {
         if (pair.first == split1) {
           std::cerr << "ERROR:  Duplicate key: " << split1 << std::endl;
           return;
